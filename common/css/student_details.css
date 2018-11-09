@@ -1,0 +1,238 @@
+/****** HEADER ******/
+header {
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+header div#header-left_column {
+    width: 75%;
+    height: 100%;
+}
+
+header div#header-left-column-upper {
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+    background: white url("../../images/EWU_campus.jpg") center no-repeat;
+    background-size: 98%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+header div#header-left-column-lower {
+    width: 100%;
+    height: 38%;
+    margin-top: 8px;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+header div#header-left-column-lower img {
+    width: 30%;
+    height: auto;
+    padding: 8px;
+}
+
+header div#header-left_column div#arrows {
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header div#header-left_column div#arrows img {
+    width: 3%;
+    height: auto;
+}
+
+header div#header-left_column div#header-lower {
+    width: 98%;
+    height: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header div#header-left_column div#header-horizontal-bar {
+    width: 100%;
+    height: 5%;
+    padding: 8px 24px 8px 0;
+    background-color: rgba(102, 102, 102, 0.6);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+header div#header-right-column {
+    width: 25%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 4px;
+}
+
+header div#header-right-column div#student-info {
+    width: 98%;
+    height: 25%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header div#header-right-column div#student-info img {
+    width: 25%;
+    height: auto;
+    padding: 4px;
+}
+
+header div#header-right-column div#student-info div#student-info-details {
+    color: #666;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 4px 8px 0 0;
+}
+
+header div#header-right-column div#student-info div#student-info-details div#student-name {
+    font-size: 0.8em;
+    padding-bottom: 4px;
+}
+
+header div#header-right-column div#student-info div#student-info-details div#student-website {
+    font-size: 0.7em;
+}
+
+header div#header-right-column div#student-info div#student-info-details div#student-email {
+    font-size: 0.7em;
+}
+
+header div#header-right-column div#student-info div#student-info-details div#student-social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+header div#header-right-column div#student-info div#student-info-details div#student-social-media img {
+    width: 8%;
+    align-self: center;
+    border-radius: 5px;
+}
+
+header div#header-right-column section#project-details {
+    width: 98%;
+    height: 78%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    color: #666;
+    font-size: 1em;
+}
+
+header div#header-right-column section#project-details h3 {
+    font-size: 1.0em;
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+header div#header-right-column section#project-details p {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+
+/****** MAIN ******/
+main {
+    width: 98%;
+    padding: 28px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 1em;
+    color: #333;
+}
+
+#image-gallery-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+
+main div img.large-thumbnails {
+    width: 23%;
+    height: auto;
+    margin: 8px 0;
+}
+
+
+/***** MEDIA *****/
+@media (max-width: 800px) {
+
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+    }
+
+    main h1 {
+        font-size: 1em;
+    }
+
+    main div img.large-thumbnails {
+        width: 30%;
+        height: auto;
+        margin: 8px 0;
+    }
+}
+
+/***** MEDIA *****/
+@media (max-width: 600px) {
+
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+        font-size: 1.4em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main div img.large-thumbnails {
+        width: 40%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+}

@@ -1,0 +1,155 @@
+/****** HEADER ******/
+header {
+    width: 98%;
+    height: 250px;
+    margin: 0 auto;
+    background: white url("../../images/EWU_campus.jpg") center no-repeat;
+    background-size: 98%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+header div#arrows {
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header div#arrows img {
+    width: 3%;
+    height: auto;
+}
+
+header div#header-lower {
+    width: 98%;
+    height: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header div#header-horizontal-bar {
+    width: 100%;
+    height: 5%;
+    padding: 8px 24px 8px 0;
+    background-color: rgba(102, 102, 102, 0.6);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+
+/****** MAIN ******/
+main {
+    width: 98%;
+    padding: 28px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main p {
+    font-size: 1em;
+    color: #333;
+}
+
+#image-gallery-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+
+main div img.large-thumbnails {
+    width: 23%;
+    height: auto;
+    margin: 8px 0;
+}
+
+#view-more {
+    padding: 8px 32px;
+    background: #ADADAD url("../images/textures/az_subtle.png") repeat;
+    background-blend-mode: multiply;
+    color: white;
+    margin-top: 14px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#view-more:hover {
+    background-color: #666;
+}
+
+
+/***** MEDIA *****/
+@media (max-width: 800px) {
+
+    body {
+        font-size: 0.8em;
+    }
+
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+    }
+
+    main h1 {
+        font-size: 1em;
+    }
+
+    main div img.large-thumbnails {
+        width: 30%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+    footer div#horizontal-area div#left-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area div#mid-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area section#right-vertical-column {
+        display: none;
+    }
+
+}
+
+/***** MEDIA *****/
+@media (max-width: 800px) {
+
+    main div img.large-thumbnails {
+        width: 30%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main div img.large-thumbnails {
+        width: 40%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+}
